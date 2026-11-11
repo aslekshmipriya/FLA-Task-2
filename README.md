@@ -1,98 +1,64 @@
-# FLA Task 2 – Designing Validation Automata
+# FLA-Task-2
 
-<p align="center">
-  <b>Finite Automata-Based Validation System Using Python</b>
-</p>
+## Finite Automata-Based Validation System
 
-## 📌 Project Overview
+This project implements a Python-based validation system using **Finite Automata (DFA)** to validate different real-world input formats.
 
-This project demonstrates the practical application of **Deterministic Finite Automata (DFA)** for real-world input validation problems.
+The project demonstrates how Deterministic Finite Automata (DFA) can be used to accept or reject input strings based on predefined rules.
 
-Three validation systems are designed and implemented using Python. Each system uses states, input alphabets, transition functions, and accepting states to determine whether a given input satisfies the defined validation rules.
+## Case Studies
 
-## 🎯 Objectives
-
-- Understand the concepts of Deterministic Finite Automata.
-- Design DFA models for real-world validation problems.
-- Identify states, input alphabets, and accepting states.
-- Implement DFA transition functions using Python.
-- Test automata using valid and invalid input strings.
-- Verify the correctness of the implementations through automated testing.
-
-## 🧩 Case Studies
+This project contains three validation applications:
 
 ### 1. ATM PIN Verification
 
-**Description:** Validates ATM PIN inputs based on the required length and numeric-only input conditions.
+Validates ATM PINs based on the required length and numeric format. The DFA accepts valid four-digit PINs and rejects invalid inputs.
 
-**DFA State Diagram**
+**DFA Diagram:**
 
-![ATM PIN DFA](ATM_PIN_DFA.png)
+![ATM PIN DFA](ATM_Pin.png)
 
 ### 2. Password Validation
 
-**Description:** Validates passwords according to the password requirements defined in the implementation.
+Validates passwords based on predefined password requirements. The DFA checks whether the entered password satisfies the required validation rules.
 
-**DFA State Diagram**
+**DFA Diagram:**
 
-![Password DFA](Password_DFA.png)
+![Password Validation DFA](Password_Vallidation.png)
 
 ### 3. Email Format Validation
 
-**Description:** Validates email inputs using finite automata based on the format conditions implemented in the project.
+Validates email addresses based on the defined email format. The DFA checks the input structure and determines whether the email address is valid or invalid.
 
-**DFA State Diagram**
+**DFA Diagram:**
 
-![Email DFA](Email_DFA.png)
+![Email Validation DFA](Email_Vallidation.png)
 
-## ⚙️ Technologies Used
+## Technologies Used
 
 - Python
-- Google Colab
 - Jupyter Notebook
-- Deterministic Finite Automata
-- Pytest
+- Finite Automata
+- Deterministic Finite Automata (DFA)
 
-## 🏗️ Implementation
-
-The project follows these steps:
-
-1. Define the validation requirements.
-2. Construct the DFA for each validation problem.
-3. Define the states and transition functions.
-4. Implement the automata using Python.
-5. Process input strings and determine acceptance or rejection.
-6. Perform testing with different input examples.
-
-## 🧪 Testing and Validation
-
-Each case study is tested using valid and invalid inputs.
-
-Testing includes:
-- Valid input verification.
-- Invalid input verification.
-- Boundary conditions.
-- Automated test execution.
-
-## 📂 Repository Structure
+## Project Structure
 
 ```text
 FLA-Task-2/
 │
 ├── FLA_Task_2.ipynb
-├── ATM_PIN.png
+├── ATM_Pin.png
 ├── Password_Vallidation.png
 ├── Email_Vallidation.png
 └── README.md
 ```
 
-## ▶️ Execution
+## Testing
 
-1. Open `FLA_Task_2.ipynb` in Google Colab.
-2. Execute the notebook cells in sequence.
-3. Observe the validation results.
-4. Run the automated tests to verify the implementations.
+The validation systems are tested using both valid and invalid input strings to verify the acceptance and rejection behavior of each DFA.
 
-## 📌 Conclusion
+Automated testing is also performed to check whether the implemented validation logic produces the expected results.
 
-This project demonstrates how Deterministic Finite Automata can be applied to practical input validation problems. The three case studies connect theoretical concepts of Formal Language and Automata with Python-based implementation and testing.
+## Conclusion
+
+This project demonstrates the practical application of Finite Automata in real-world validation systems. It shows how DFA can be used to recognize valid input patterns and reject invalid ones through state transitions.
